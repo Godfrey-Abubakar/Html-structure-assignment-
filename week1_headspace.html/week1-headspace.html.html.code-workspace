@@ -1,10 +1,459 @@
-{
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "HTML"
-	}
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health App or Meditation & Sleep - Headspace</title>
+    <style>
+       body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+        width: 100%;
+       } 
+       .one {
+        border: 1px solid #ffce00;
+        background-color: #ffce00;
+        text-align: center;
+        width: 100%;
+        height: 55px;
+        margin-bottom: 20px;
+       }
+       .one p {
+        color: black;
+        font-size: 16px;
+       }
+       .one a {
+        color: black;
+       }
+       .logo {
+        width: 30px;
+        height: 30px;
+        background-color: #ff7300;
+        border-radius: 50%;
+        margin-left: 40px;
+       }
+       nav div {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+       }
+       ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin: 0;
+        padding: 0;
+       }
+       .one-1 {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-left: auto;
+        margin-right: 40px;
+        padding-left: 0;
+       }
+       .one-1 button {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+       }
+       .two {
+        text-align: center;
+        border: 1px solid white;
+        margin-top: 40px;
+       }
+       .two-main h1 {
+        color: black;
+        font-size: 42px;
+       }
+       .two-1 {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+       }
+       .two-2 {
+        box-sizing: border-box;
+        background-color: #f8f3f1;
+        width: 65%;
+        height: 370px;
+        padding: 20px;
+        border-radius: 20px;
+       }
+       .two-3 {
+        box-sizing: border-box;
+        background-color: #f8f3f1;
+        width: 25%;
+        height: 370px;
+        padding: 20px;
+        border-radius: 20px;
+       }
+       .two-1 h2 {
+        color: black;
+        font-size: 30px;
+       }
+       .two-1 button {
+        background-color: #292522;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        padding: 14px 25px;
+       }
+       .three {
+        text-align: center;
+        margin-top: 55px;
+        padding: 20px 24px;
+       }
+       .three h2 {
+        color: black;
+        font-size: 28px;
+        margin: 0 0 24px;
+       }
+       .three-1 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        width: 100%;
+        margin: 0 auto;
+       }
+       .three-2 {
+        background-color: white;
+        border: 0.1px solid rgb(168, 167, 167);
+        width: 30%;
+        padding: 16px 12px;
+        border-radius: 8px;
+       }
+       .three-2 p {
+        text-align: left;
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+       }
+       .four {
+        text-align: center;
+        margin: 60px 24px;
+       }
+       .four h2 {
+        color: black;
+        font-size: 28px;
+        margin-bottom: 24px;
+       }
+       .four-1 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 24px;
+       }
+       .four-2 {
+        background-color: white;
+        border: 1px solid #d6d2cf;
+        border-radius: 20px;
+        padding: 12px 18px;
+       }
+       .four-3 {
+        background-color: black;
+        border-color: black;
+        color: white;
+       }
+       .four-4 {
+        box-sizing: border-box;
+        background-color:#ffce00;
+        width: 80%;
+        height: 400px;
+        margin: 0 auto;
+        padding: 32px;
+        border-radius: 20px;
+        text-align: left;
+       }
+       .four-4 a {
+        display: inline-block;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        border-radius: 25px;
+        padding: 14px 25px;
+       }
+       .five {
+        background-color: white;
+        text-align: center;
+        margin-top: 10%;
+        padding: 45px 24px;
+        width: 100%;
+       }
+       .five h2 {
+        color: black;
+        font-size: 50px;
+        margin-bottom: 30px;
+       }
+       .five-1 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        width: 100%;
+        margin: 0 auto;;
+       }
+       .five-2 {
+        box-sizing: border-box;
+        background-color: #f8f3f1;
+        width: 30%;
+        min-height: 300px;
+        padding: 24px;
+        border-radius: 18px;
+        text-align: left;
+       }
+       .five-3 {
+        color: black;
+        font-size: 16px;
+        line-height: 1.5;
+       }
+       .five-4 {
+        color: #555555;
+        font-size: 14px;
+        font-weight: small;
+        margin-top: 30%;
+       }
+       .six {
+        background-color: blue;
+        color: white;
+        text-align: center;
+        padding: 200px 24px;
+        box-sizing: border-box;
+        width: 90%;
+        height: 600px;
+        margin: auto;
+        border-radius: 15px;
+        text-align: left;
+       }
+       .six h2 {
+        font-size: 28px;
+        text-align: center;
+
+       }
+       .six p {
+        font-size: 17px;
+        text-align: center;
+       }
+       .six-1 {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 24px;
+       }
+       .six-2 {
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 24px;
+        padding: 12px 22px;
+        cursor: pointer;
+       }
+       .six-3 {
+        background-color: blue;
+        color: white;
+        border: 1px solid white;
+        border-radius: 24px;
+        padding: 12px 22px;
+        cursor: pointer;
+       }
+       .seven {
+        text-align: center;
+        margin: 60px 24px;
+       }
+       .seven h2 {
+        color: black;
+        font-size: 28px;
+        margin-bottom: 24px;
+       }
+       .seven-1 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 24px;
+       }
+       .seven-2 {
+        background-color: white;
+        border: 1px solid #d6d2cf;
+        border-radius: 20px;
+        padding: 12px 18px;
+       }
+       .seven-3 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+       }
+       .seven-4 {
+        box-sizing: border-box;
+        background-color: #f8f3f1;
+        width: 30%;
+        min-height: 230px;
+        padding: 24px;
+        border-radius: 18px;
+        color: black;
+        text-align: left;
+        text-decoration: none;
+       }
+       .seven-4 h3 {
+        font-size: 20px;
+       }
+       .seven-4 p {
+        line-height: 1.5;
+       }
+       .eight {
+        background-color: #f8f3f1;
+        text-align: center;
+        margin-top: 40px;
+        padding: 45px 24px;
+       }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="one">
+            <a href="https://www.headspace.com/access?origin=navigation" target="_blank">
+                <p>On Original Medicare? Get Headspace at no cost 鈫�</p>
+            </a>
+        </div>
+        <nav>
+            <div>
+                <div class="logo"></div>
+                <ul>
+                    <li><a href="#for-you" style="color: black; text-decoration: none;">For You</a></li>
+                    <li><a href="#for-business" style="color: black ; text-decoration: none;">For Business</a></li>
+                    <li><a href="#for-providers" style="color: black; text-decoration: none;">For Providers</a></li>
+                    <li><a href="#our-plans" style="color: black; text-decoration: none;">Our Plans</a></li>
+                    <li><a href="#resources" style="color: black; text-decoration: none;">Resources</a></li>
+                    <li><a href="#about" style="color: black; text-decoration: none;">About</a></li>
+                </ul>
+                <div class="one-1">
+                    <p>
+                        <a href="https://www.headspace.com/login" target="_blank" style="color: black; text-decoration: none;">Log in</a>
+                    </p>
+                    <p>
+                        <a href="https://www.headspace.com/signup" target="_blank" style="color: black; text-decoration: none;">Sign up</a>
+                    </p>
+                    <button>Try for free</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="two" id="for-you">
+        <div class="two-main">
+            <h1>all with Headspace</h1>
+            <div class="two-1">
+                <div class="two-2">
+                    <h2>Mental health app with expert-led meditations and tools</h2>
+                    <button>Try for $0</button>
+                </div>
+                <div class="two-3">
+                    <h2>Online therapy that accepts insurance</h2>
+                    <button>Check your coverage</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="three">
+        <h2>What kind of headspace are you looking for?</h2>
+        <div class="three-1">
+            <div class="three-2">
+                <p>Stress less</p>
+            </div>
+            <div class="three-2">
+                <p>Sound sleep</p>
+            </div>
+            <div class="three-2">
+                <p>Manage anxiety</p>
+            </div>
+            <div class="three-2">
+                <p>Process thoughts</p>
+            </div>
+            <div class="three-2">
+                <p>Practice meditation</p>
+            </div>
+            <div class="three-2">
+                <p>Start therapy</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="four">
+        <h2>The mental health app for every moment</h2>
+        <div class="four-1">
+            <div class="four-2 four-3">AI guidance</div>
+            <div class="four-2">Guided meditations</div>
+            <div class="four-2">Sleep resources</div>
+            <div class="four-2">Expert-led programs</div>
+            <div class="four-2">Online therapy</div>
+        </div>
+        <div class="four-4">
+            <h3>Always-there support</h3>
+            <p>Talk through what's on your mind with Ebb, Headspace's AI companion, and get suggestions based on how you're feeling.</p>
+            <a href="https://www.headspace.com/ai-mental-health-companion">Chat with Ebb</a>
+        </div>
+    </div>
+
+    <div class="five">
+        <h2>Members are enjoying happier and healthier lives</h2>
+        <div class="five-1">
+            <div class="five-2">
+                <p class="five-3">I appreciate the consistent reminders to be kind and patient with myself as I learn and practice daily habits that are helping me find a calmer daily space</p>
+                <p class="five-4">Member on forming more helpful habits</p>
+            </div>
+            <div class="five-2">
+                <p class="five-3">Headspace helped me begin the process of stepping back from toxic thinking and being a part of something bigger than my own personal grievances.</p>
+                <p class="five-4">Member on learning to think in more helpful ways</p>
+            </div>
+            <div class="five-2">
+                <p class="five-3">The strategies in the courses allow me to work on a part of myself that I am struggling with. Headspace changed the relationship I have with myself.</p>
+                <p class="five-4">Member on working through their feelings</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="six" id="for-business">
+        <h2>Trusted by thousands of employers, health plans, and partners globally</h2>
+        <p>Support your team today with mindfulness, coaching, EAP, therapy, and psychiatry.</p>
+        <div class="six-1">
+            <button class="six-2">Request a Demo</button>
+            <button class="six-3">Learn More</button>
+        </div>
+    </div>
+    
+    <div class="seven" id="resources">
+        <h2>Explore our library</h2>
+        <div class="seven-1">
+            <button class="seven-2">Featured</button>
+            <button class="seven-2">Popular</button>
+            <button class="seven-2">Sleep</button>
+            <button class="seven-2">Stress</button>
+            <button class="seven-2">Meditation and Mindfulness</button>
+        </div>
+        <div class="seven-3">
+            <a class="seven-4" href="https://www.headspace.com/ai-mental-health-companion">
+                <h3>Meet Ebb</h3>
+                <p>Get personalized content recommendations with Ebb.</p>
+            </a>
+            <a class="seven-4" href="https://www.headspace.com/partners/cocomelon">
+                <h3>Wiggle to Wind Down</h3>
+                <p>Help kids settle in and drift off.</p>
+            </a>
+            <a class="seven-4" href="https://www.headspace.com/mindful-families">
+                <h3>Mindful Families Collection</h3>
+                <p>Bring your attention to all interactions with your children.</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
