@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>IMDB Top 250.</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      width: 100%;
+    }
+    h1 {
+      margin:2px;
+      font-size:40px;
+      width:100%;
+    }
+    h1 p {
+      margin:2px;
+    }
+    .one {
+      width: 40px;
+      height: 20px;
+      color: white;
+      background-color: darkblue;
+      text-align: center;
+      border-radius: 5px 2px 15px 5px;
+    }
+    th {
+      border: 1px solid gold;
+      width: 90px;
+      border-radius: 0px 8px 8px 8px;
+    }
+    td h2 {
+      margin:5px 0px 5px 0px;
+      color: gold;
+      font-size:20px;
+    }
+    .one h2 {
+      margin:0px 0px 5px 0px;
+      color:white;
+      font-size: 15px;
+    }
+    td p{
+      margin:5px 0px 5px 0px;
+    }
+    span {
+      color:gold;
+      font-size: 15px;
+    }
+    .two {
+      display:flex;
+      align-items:center;
+      gap:110px;
+      font-size:small;
+    }
+    .two p {
+      word-spacing:5px;
+    }
+    .three {
+      display:flex;
+      align-items:center;
+      gap:30px;
+      font-size:small;
+    }
+    .blue {
+      color: lightblue;
+    }
+    .info {
+      color:lightblue;
+      font-size:30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>IMDb Top 250 movies</h1>
+    <p>As rated by regular IMDb voters.</p>
+  </header>
+  <div>
+    <p>0 OF 250 WATCHED</p>
+    <h2>250 Titles</h2>
+  </div>
+
+  <table>
+    <tr>
+      <th>
+          <img src="https://share.google/f2Ax4jsfifCoHqT8G"
+          alt="the shawshank movie cover">
+      </th>
+
+      <td>
+        <div class="one">
+          <h2>#1</h2>
+        </div>
+        <h2>The Shawshank Redemption</h2>
+        
+        <div class="two">
+          <p>1994 • 2h 22m • 15</p>
+          <span class="info">ⓘ</span>
+        </div>
+        <div class="three">
+          <p><span>★</span>9.3(3.3M)</p>
+          <p class="blue">☆Rate</p>
+        </div>
+        <p class="blue">👁Mark as watched</p>
+      </td>
+    </tr>
+    
+    <tr>
+      <th>
+        <img src="" alt="the godfather movie cover">
+      </th>
+
+      <td>
+        <div class="one">
+          <h2>#2</h2>
+        </div>
+        <h2>The Godfather</h2>
+
+        <div class="two">
+          <p>1972 • 2h 55m • 15</p>
+          <span class="info">ⓘ</span>
+        </div>
+        <div class="three">
+          <p><span>★</span>9.2(2.3M)</p>
+          <p class="blue">☆Rate</p>
+        </div>
+        <p class="blue">👁Mark as watched</p>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <img src="" alt="the dark knight movie cover">
+      </th>
+
+      <td>
+        <div class="one">
+          <h2>#3</h2>
+        </div>
+        <h2>The Dark Knight</h2>
+
+        <div class="two">
+          <p>2008 • 2h 32m • 12A</p>
+          <span class="info">ⓘ</span>
+        </div>
+        <div class="three">
+          <p><span>★</span>9.1(3.2M)</p>
+          <p class="blue">☆Rate</p>
+        </div>
+        <p class="blue">👁Mark as watched</p>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <img src="" alt="the godfather part two movie cover">
+      </th>
+
+      <td>
+        <div class="one">
+          <h2>#4</h2>
+        </div>
+        <h2>The Godfather Part II</h2>
+
+        <div class="two">
+          <p>1974 • 3h 22m • X</p>
+          <span class="info">ⓘ</span>
+        </div>
+        <div class="three">
+          <p><span>★</span>9.0(1.5M)</p>
+          <p class="blue">☆Rate</p>
+        </div>
+        <p class="blue">👁Mark as watched</p>
+      </td>
+    </tr>
+    
+    <tr>
+      <th>
+        <img src="" alt="movie cover">
+      </th>
+
+      <td>
+        <div class="one">
+          <h2>#5</h2>
+        </div>
+        <h2>The Lord Of The Rings:<br> The Return Of The King</h2>
+
+        <div class="two">
+          <p>2003 • 3h 21m • 12A</p>
+          <span class="info">ⓘ</span>
+        </div>
+        <div class="three">
+          <p><span>★</span>9.0(2.2M)</p>
+          <p class="blue">☆Rate</p>
+        </div>
+        <p class="blue">👁Mark as watched</p>
+      </td>
+    </tr>
+    
+    <tr>
+      <th>
+        <img src="" alt="movie cover">
+      </th>
+
+      <td>
+        <div class="one">
+          <h2>#6</h2>
+        </div>
+        <h2>12 Angry Men</h2>
+
+        <div class="two">
+          <p>1957 • 1h 36m • U</p>
+          <span class="info">ⓘ</span>
+        </div>
+        <div class="three">
+          <p><span>★</span>9.0(1M)</p>
+          <p class="blue">☆Rate</p>
+        </div>
+        <p class="blue">👁Mark as watched</p>
+      </td>
+    </tr>
+    
+    <tr>
+      <th>
+        <img src="" alt="movie cover">
+      </th>
+
+      <td>
+        <div class="one">
+          <h2>#7</h2>
+        </div>
+        <h2>Schindler''s List</h2>
+
+        <div class="two">
+          <p>1993 • 3h 16m • 15</p>
+          <span class="info">ⓘ</span>
+        </div>
+        <div class="three">
+          <p><span>★</span>9.0(1.6M)</p>
+          <p class="blue">☆Rate</p>
+        </div>
+        <p class="blue">👁Mark as watched</p>
+      </td>
+    </tr>
+    
+    <tr>
+      <th>
+        <img src="" alt="movie cover">
+      </th>
+
+      <td>
+        <div class="one">
+          <h2>#8</h2>
+        </div>
+        <h2>The Lord Of The Rings:<br>The Fellowship Of The Ring</h2>
+
+        <div class="two">
+          <p>2001 • 2h 58m • PG</p>
+          <span class="info">ⓘ</span>
+        </div>
+        <div class="three">
+          <p><span>★</span>8.9(2.2M)</p>
+          <p class="blue">☆Rate</p>
+        </div>
+        <p class="blue">👁Mark as watched</p>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <img src="" alt="movie cover">
+      </th>
+
+      <td>
+        <div class="one">
+          <h2>#9</h2>
+        </div>
+        <h2>Pulp Fiction</h2>
+
+        <div class="two">
+          <p>1994 • 2h 34m • 18</p>
+          <span class="info">ⓘ</span>
+        </div>
+        <div class="three">
+          <p><span>★</span>8.8(2.5M)</p>
+          <p class="blue">☆Rate</p>
+        </div>
+        <p class="blue">👁Mark as watched</p>
+      </td>
+    </tr>
+    
+    <tr>
+      <th>
+        <img src="" alt="movie cover">
+      </th>
+
+      <td>
+        <div class="one">
+          <h2>#10</h2>
+        </div>
+        <h2>The Lord Of The Rings:<br>The Two Towers</h2>
+
+        <div class="two">
+          <p>1957 • 1h 36m • U</p>
+          <span class="info">ⓘ</span>
+        </div>
+        <div class="three">
+          <p><span>★</span>9.0(1M)</p>
+          <p class="blue">☆Rate</p>
+        </div>
+        <p class="blue">👁Mark as watched</p>
+      </td>
+    </tr>
+  
+  </table>
+
+</body>
+</html>
