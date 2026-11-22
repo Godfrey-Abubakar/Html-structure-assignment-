@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BellaNaija</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            height: 65px;
+            padding: 10px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: black;
+        }
+
+        header h1 {
+            font-family: cursive;
+            font-size: 25px;
+            font-weight: normal;
+            color: #222;
+        }
+
+        .menu {
+            color: darkred;
+            font-size: 28px;
+        }
+
+        .search {
+            font-size: 30px;
+        }
+
+        .advert {
+            height: 40px;
+            margin: 12px 28px 30px;
+            background-color: white;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            font-size: 13px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            text-align: center;
+            border:1px solid gold;
+        }
+
+        .featured {
+            margin: 0 15px;
+        }
+
+        .featured .main-image {
+            aspect-ratio: 0.92; 
+        }
+
+        .featured .second-image {
+            margin-top: 13px;
+            aspect-ratio: 1.8;
+        }
+
+        .featured h2 {
+            font-family: Georgia, serif;
+            font-size: 17px;
+            line-height: 1.15;
+            margin: -65px 7px 25px;
+            color: #4CC653;
+        }
+
+        .featured .second-title {
+            margin: 12px 3px 45px;
+            color: #E8DF4B;
+            font-size:15px;
+        }
+
+        .section-heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 35px 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .trending {
+            padding: 0 28px;
+        }
+
+        .trend {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 15px 0 30px;
+            border-bottom: 1px solid whitesmoke;
+        }
+
+        .trend img {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .trend p {
+            font-family: Georgia, serif;
+            font-size: 15px;
+            line-height: 1.25;
+            color: #E8DF4B;
+            margin: 0;
+        }
+
+        .more {
+            font-size: 13px;
+            font-weight: bold;
+            text-align: right;
+            margin: 35px 0 45px;
+        }
+  
+        .link {
+          text-decoration:none;
+          color:#E8DF4B;
+        }
+        
+        .link:visited {
+          color:#4CC653;
+        }
+
+        .latest {
+            padding: 0 15px;
+        }
+
+        .latest p {
+            color: #E8DF4B;
+            font-family: Georgia, serif;
+            font-size: 16px;
+            line-height: 1.25;
+            padding: 23px 0;
+            margin: 0;
+            border-top: 1px solid whitesmoke;
+        }
+
+        .sweet-spot {
+            background-color: #720000;
+            padding: 25px 28px 30px;
+            text-align: center;
+        }
+
+        .sweet-spot h2,
+        .events h2,
+        .bn20 h2 {
+            color: #E8DF4B;
+            font-size: 15px;
+            margin: 0 0 25px;
+        }
+
+        .sweet-spot img {
+            aspect-ratio: 0.95;
+        }
+
+        .story {
+            background-color: #0B0B0B;
+            padding: 25px 20px;
+        }
+
+        .story h3 {
+            color: #4CC653;
+            font-family: Georgia, serif;
+            font-size: 17px;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .events {
+            background-color: #720000;
+            padding: 0 28px 30px;
+            text-align: center;
+        }
+
+        .events img {
+            aspect-ratio: 0.95;
+        }
+
+        .events .story h3 {
+            color: #E8DF4B;
+        }
+
+        .bn20 {
+            background-color: #720000;
+            padding: 0 28px 30px;
+            text-align: center;
+        }
+
+        .bn20 img {
+            aspect-ratio: 0.95;
+        }
+
+        .bn20 .story h3 {
+            color: #E8DF4B;
+        }
+
+        .new-posts {
+            padding: 20px 15px;
+        }
+
+        .post {
+            display: flex;
+            align-items: flex-start;
+            gap: 13px;
+            margin: 45px 0;
+        }
+
+        .post img {
+            width: 70px;
+            height: 70px;
+            flex-shrink: 0;
+        }
+
+        .post p {
+            font-family: Georgia, serif;
+            color: #E8DF4B;
+            font-size: 15px;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .post strong {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <span class="menu">☰</span>
+        <h1>BellaNaija</h1>
+        <span class="search">⌕</span>
+    </header>
+
+    <div class="advert">
+        <h3>Sign up to get your business on RedVout</h3>
+    </div>
+
+    <div class="featured">
+
+        <img class="main-image"
+        src="the/wedding/img.jpg" alt="Wedding photo of diane and pascal">
+
+        <h2>
+            The Wedding Countdown Is On!
+            Diana Eneje & Pascal Godwin Celebrate
+            Their Introduction in Royal Blue
+        </h2>
+
+        <img class="second-image"
+        src="images/will-smith.jpg" alt="International Men's Day">
+
+        <h2 class="second-title">
+            International Men's Day: Six Films That
+            Explore the Vulnerable Side of Men
+        </h2>
+
+    </div>
+
+    <div class="trending">
+
+        <div class="section-heading">
+             <h2>📈 TRENDING</h2>
+        </div>
+
+        <div class="trend">
+            <img src="images/elizabeth.jpg" alt="Elizabeth Agboola">
+            <p>
+                Elizabeth Agboola: Your Next Flight
+                From Nigeria Could Be Two Holidays in One.
+            </p>
+        </div>
+
+        <div class="trend">
+            <img src="images/rema.jpg" alt="Rema and wizkid singing along">
+            <p>
+                Rema & Wizkid Have Us Singing Along
+                to "Feel Alright" With This New Lyric Video
+            </p>
+        </div>
+
+        <div class="trend">
+            <img src="images/money.jpg" alt="Money in a Wheelbarrow">
+            <p>
+                "Money in a Wheelbarrow":
+                Adekunle Gold & Blaqbonez Are Making
+                Big-Money Talk Sound Good
+            </p>
+        </div>
+
+       <a class="link" href="https://www.bellanaija.com/">
+           <h3 class="more">MORE TRENDING STORIES →</h3>
+       </a>
+
+    </div>
+    
+    <div class="latest">
+
+        <div class="section-heading">
+            <h2>LATEST</h2>
+        </div>
+
+        <p>
+            Zadok Is Singing About Finding Real Love
+            in His New Single "My Treasure"
+        </p>
+
+        <p>
+            "Money in a Wheelbarrow": Adekunle Gold &
+            Blaqbonez Are Making Big-Money Talk Sound Good
+        </p>
+
+        <p>
+            Rema & Wizkid Have Us Singing Along to
+            "Feel Alright" With This New Lyric Video
+        </p>
+
+        <p>
+            The Wedding Countdown Is On! Diana Eneje &
+            Pascal Godwin Celebrate Their Introduction
+            in Royal Blue
+        </p>
+
+        <p>
+            Elizabeth Agboola: Your Next Flight From
+            Nigeria Could Be Two Holidays in One.
+        </p>
+
+        <p>
+            Asali Africa: Serves Up "There's Rice at Home"
+            A New Cooking Series
+        </p>
+
+        <p>
+            Beyond the Mini LED Label: What Should
+            Define Good Mini LED Performance?
+        </p>
+
+        <a class="link" href="https://www.bellanaija.com/">
+            <h3 class="more">MORE LATEST STORIES →</h3>
+        </a>
+
+    </div>
+
+    <div class="sweet-spot">
+
+        <h2>SWEET SPOT</h2>
+
+        <img src="images/wedding.jpg" alt="Wedding">
+
+        <div class="story">
+            <h3>
+                The Wedding Countdown Is On!
+                Diana Eneje & Pascal Godwin Celebrate
+                Their Introduction in Royal Blue
+            </h3>
+        </div>
+
+        <a class="link" href="https://www.bellanaija.com/">
+            </><h3 class="more">MORE SWEET SPOT →</h3>
+        </a>
+
+    </div>
+
+    <div class="events">
+
+        <h2>EVENTS</h2>
+
+        <img src="images/event.jpg" alt="Lagos Theatre Festival">
+
+        <div class="story">
+            <h3>
+                Lagos Hosts 2026 International Theatre
+                Festival, Featuring Local and International
+                Productions
+            </h3>
+        </div>
+
+        <a class="link" href="https://www.bellanaija.com/">
+            <h3 class="more">MORE EVENTS →</h3>
+        </a>
+
+    </div>
+
+    <div class="bn20">
+
+        <h2>BN20</h2>
+
+        <img src="images/bn20.jpg" alt="BellaNaija 20 years">
+
+        <div class="story">
+            <h3>
+                Celebrating 20 years of stories,
+                culture and the people who make BellaNaija.
+            </h3>
+        </div>
+
+    </div>
+
+    <div class="new-posts">
+
+        <div class="section-heading">
+            <h2>NEW POSTS</h2>
+        </div>
+
+        <div class="post">
+            <img src="images/zadok.jpg" alt="Zadok">
+            <p>
+                <strong>MUSIC</strong><br>
+                Zadok Is Singing About Finding Real
+                Love in His New Single "My Treasure"
+            </p>
+        </div>
+
+        <div class="post">
+            <img src="images/money.jpg" alt="Money in a Wheelbarrow">
+            <p>
+                <strong>BN TV</strong><br>
+                "Money in a Wheelbarrow": Adekunle Gold
+                & Blaqbonez Are Making Big-Money Talk Sound Good
+            </p>
+        </div>
+
+        <div class="post">
+            <img src="images/rema.jpg" alt="Rema">
+            <p>
+                <strong>BN TV</strong><br>
+                Rema & Wizkid Have Us Singing Along
+                to "Feel Alright" With This New Lyric Video
+            </p>
+        </div>
+
+        <div class="post">
+            <img src="images/wedding.jpg" alt="Wedding">
+            <p class="green">
+                <strong>SCOOP</strong><br>
+                The Wedding Countdown Is On!
+                Diana Eneje & Pascal Godwin Celebrate
+                Their Introduction in Royal Blue
+            </p>
+        </div>
+
+        <div class="post">
+            <img src="images/elizabeth.jpg" alt="Elizabeth Agboola">
+            <p>
+                <strong>FEATURES</strong><br>
+                Elizabeth Agboola: Your Next Flight
+                From Nigeria Could Be Two Holidays in One
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
